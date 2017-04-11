@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "RalewayRegular";
+  src: url("../fonts/raleway/raleway_regular.ttf");
+}
+@font-face {
+  font-family: "RalewayLight";
+  src: url("../fonts/raleway/raleway_light.ttf");
+}
+@font-face {
+  font-family: "RalewayBold";
+  src: url("../fonts/raleway/raleway_bold.ttf");
+}
+@font-face {
+  font-family: "Socialico";
+  src: url("../fonts/socialico/socialico.ttf");
+}
+@font-face {
+  font-family: "ProximaNovaRegular";
+  src: url("../fonts/proxima_nova/proxima_nova_regular.otf");
+}
+@font-face {
+  font-family: "ProximaNovaExtraBold";
+  src: url("../fonts/proxima_nova/proxima_nova_extrabold.otf");
+}
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../fonts/proxima_nova/proxima_nova_bold.otf");
+}
+@font-face {
+  font-family: "DroidSerifItalic";
+  src: url("../fonts/droid_serif/droid_serif_italic.ttf");
+}
+
+@mainFont: RalewayRegular, sans-serif;
+@headlineFont: RalewayBold, sans-serif;
+@mainTextColorLight: #b0b8b8;
+@mainTextColorDark: #8c9494;
+@navbarColor: #747a7a;
+@navbarColorHover: #3c3d42;
+@linkColor: #9fa9a9;
+@headlineColor: #636c6c;
+@headlineColorSecond: rgba(93,202,136,0.66);
+@iconColor: rgb(61,62,66);
+@hoverColor: rgb(93,202,136);
+@backgroundMain: #ffffff;
+@backgroundStripe: #f2f9f9;
+@addColor: #9dc8d1;
+
+
+
+h2 {
+  font: 36px @headlineFont;
+}
+h3 {
+  margin-top: 10px;
+  font: 36px @mainFont;
+}
+p {
+  margin-top: 46px;
+  margin-bottom: 53px;
+}
+
+.button(@mainColor, @hoverColor) {
+  width: 240px;
+  border-radius: 50px 50px 50px 50px;
+  border: 3px solid;
+  background: transparent;
+  font: 21px @headlineFont;
+  text-transform: uppercase;
+
+  &:hover {
+    color: @hoverColor;
+    background: transparent;
+    border-color: @hoverColor;
+  }
+}
+
+.link(@mainColor, @hoverColor) {
+  color: @linkColor;
+  text-decoration: none;
+  font: 20px @mainFont;
+  &:hover {
+    color: @headlineColor;
+  }
+}
+
+.respond-to (@device, @content) {
+  & when (@device = phones) {
+  @media all and (max-width: 479px) {@content();}
+}
+  & when (@device = wide-phones) {
+  @media all and (min-width: 480px) and (max-width: 767px) {@content();}
+}
+  & when (@device = tablets) {
+    @media all and (min-width: 768px) and (max-width: 952px) {@content();}
+  }
+  & when (@device = small-desktops) {
+    @media all and (min-width: 953px) and (max-width: 1199px) {@content();}
+  }
+  & when (@device = lg-desktops) {
+    @media all and (min-width: 1200px) and (max-width: 1440px) {@content();}
+  }
+  & when (@device = xlg-desktops) {
+    @media all and (min-width: 1441px) and (max-width: 1920px) {@content();}
+  }
+  & when (@device = wide-desktops) {
+    @media all and (min-width: 1921px) and (max-width: 2570px) {@content();}
+  }
+  & when (@device = xwide-desktops) {
+    @media all and (min-width: 2571px) {@content();}
+  }
+}

@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "RalewayRegular";
+  src: url("../fonts/raleway/raleway_regular.ttf");
+}
+@font-face {
+  font-family: "RalewayLight";
+  src: url("../fonts/raleway/raleway_light.ttf");
+}
+@font-face {
+  font-family: "RalewayBold";
+  src: url("../fonts/raleway/raleway_bold.ttf");
+}
+@font-face {
+  font-family: "Socialico";
+  src: url("../fonts/socialico/socialico.ttf");
+}
+@font-face {
+  font-family: "ProximaNovaRegular";
+  src: url("../fonts/proxima_nova/proxima_nova_regular.otf");
+}
+@font-face {
+  font-family: "ProximaNovaExtraBold";
+  src: url("../fonts/proxima_nova/proxima_nova_extrabold.otf");
+}
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../fonts/proxima_nova/proxima_nova_bold.otf");
+}
+@font-face {
+  font-family: "DroidSerifItalic";
+  src: url("../fonts/droid_serif/droid_serif_italic.ttf");
+}
+h2 {
+  font: 36px RalewayBold, sans-serif;
+}
+h3 {
+  margin-top: 10px;
+  font: 36px RalewayRegular, sans-serif;
+}
+p {
+  margin-top: 46px;
+  margin-bottom: 53px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  float: left;
+  width: 100%;
+}
+.container-fluid {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+}
+.inside {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  height: 839px;
+}
+header .inside nav {
+  background: #ffffff;
+  border: none;
+  width: 100%;
+  height: 109px;
+  margin-bottom: 0;
+  padding-right: 0;
+  padding-top: 20px;
+  color: #3c3d42;
+  font: 18px RalewayRegular, sans-serif;
+}
+header .inside nav .container-fluid {
+  padding: 0;
+  background: #ffffff;
+}
+header .inside nav .container-fluid .navbar-nav > li > a {
+  z-index: 100;
+}
+@media all and (min-width: 768px) and (max-width: 952px) {
+  header .inside nav {
+    height: 150px;
+  }
+}
+header .inside nav a.navbar-brand {
+  color: #3c3d42;
+  font: 30px ProximaNovaExtraBold, sans-serif;
+  margin-left: 0;
+}
+header .inside nav .navbar-nav > li > a {
+  color: #747a7a;
+  font: 14px RalewayRegular, sans-serif;
+  padding-top: 26px;
+  padding-left: 17px;
+}
+header .inside nav .navbar-nav > li > a:hover {
+  color: #3c3d42;
+}
+header .inside nav .navbar-right {
+  padding-top: 25px;
+}
+header .inside nav .navbar-right > i:first-child {
+  padding-left: 15px;
+  padding-right: 6px;
+}
+header .inside nav .navbar-right > i:last-child {
+  padding-left: 35px;
+  padding-right: 6px;
+}
+@media all and (max-width: 479px) {
+  header .inside nav .navbar-right {
+    visibility: hidden;
+  }
+}
+header .add {
+  width: 100%;
+  height: 730px;
+  background: #0d68ae url("../img/background/bg_2.png") center bottom no-repeat;
+}
+@media all and (min-width: 2571px) {
+  header .add {
+    background-size: cover;
+  }
+}
+@media all and (max-width: 479px) {
+  header .add {
+    background: url("../img/background/bg_1.png") center bottom no-repeat;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 767px) {
+  header .add {
+    background: url("../img/background/bg_1.png") center bottom no-repeat;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 952px) {
+  header .add {
+    background: url("../img/background/bg_1.png") center bottom no-repeat;
+  }
+}
+header .add .inside {
+  height: 730px;
+  margin: 0 auto;
+  position: relative;
+}
+header .add .inside .jumbotron {
+  background: transparent;
+  width: 50%;
+  padding: 0;
+  margin-top: 174px;
+  color: #ffffff;
+}
+@media all and (max-width: 479px) {
+  header .add .inside .jumbotron {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media all and (min-width: 480px) and (max-width: 767px) {
+  header .add .inside .jumbotron {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 952px) {
+  header .add .inside .jumbotron {
+    width: 100%;
+    text-align: center;
+  }
+}
+header .add .inside .jumbotron h3 {
+  font-family: RalewayLight, sans-serif;
+}
+header .add .inside .jumbotron p {
+  color: #9dc8d1;
+}
+header .add .inside .jumbotron .btn {
+  width: 240px;
+  border-radius: 50px 50px 50px 50px;
+  border: 3px solid;
+  background: transparent;
+  font: 21px RalewayBold, sans-serif;
+  text-transform: uppercase;
+}
+header .add .inside .jumbotron .btn:hover {
+  color: #9dc8d1;
+  background: transparent;
+  border-color: #9dc8d1;
+}
+main {
+  width: 100%;
+}
+main .features {
+  width: 100%;
+  height: 983px;
+  background: #ffffff;
+}
+main .features .inside {
+  height: 983px;
+  margin: 0 auto;
+}
+main .features .inside .heading {
+  text-align: center;
+  margin-top: 84px;
+}
+main .features .inside .heading h2 {
+  color: #636c6c;
+}
