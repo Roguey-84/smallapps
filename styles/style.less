@@ -92,6 +92,10 @@ header {
     .respond-to(tablets; {
       background: url("../img/background/bg_1.png") center bottom no-repeat;
     });
+    .respond-to(small-desktops; {
+      height: 530px;
+      background-size: cover;
+    });
     .inside {
       //max-width: 1176px;
       height: 730px;
@@ -99,26 +103,37 @@ header {
       position: relative;
       .jumbotron {
         background: transparent;
-        width: 50%;
+        width: 42%;
         padding: 0;
         margin-top: 174px;
         color: #ffffff;
         .respond-to(phones; {
-          width: 100%;
+          margin: 130px auto;
+          width: 90%;
           text-align: center;
         });
         .respond-to(wide-phones; {
-          width: 100%;
+          margin: 200px auto;
+          width: 90%;
           text-align: center;
         });
         .respond-to(tablets; {
-          width: 100%;
+          margin: 174px auto;
+          width: 90%;
           text-align: center;
         });
+        .respond-to(small-desktops; {
+          margin-top: 50px;
+          margin-left: 25px;
+        });
+        h2 {
+          margin-bottom: 0;
+        }
         h3 {
           font-family: RalewayLight, sans-serif;
         }
         p {
+          font-size: 14px;
           color: @addColor;
         }
         .btn {
@@ -142,9 +157,12 @@ main {
       margin: 0 auto;
       .heading {
         text-align: center;
-        margin-top: 84px;
+        margin-top: 77px;
         h2 {
           color: @headlineColor;
+        }
+        p {
+          margin-top: 26px;
         }
       }
     }

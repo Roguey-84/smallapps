@@ -34,10 +34,13 @@ h2 {
   font: 36px RalewayBold, sans-serif;
 }
 h3 {
-  margin-top: 10px;
+  margin-top: 2px;
   font: 36px RalewayRegular, sans-serif;
 }
 p {
-  margin-top: 46px;
+  color: #b0b8b8;
+  font: 16px RalewayRegular, sans-serif;
+  line-height: 24px;
+  margin-top: 30px;
   margin-bottom: 53px;
 }

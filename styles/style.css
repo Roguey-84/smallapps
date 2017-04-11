@@ -34,11 +34,14 @@ h2 {
   font: 36px RalewayBold, sans-serif;
 }
 h3 {
-  margin-top: 10px;
+  margin-top: 2px;
   font: 36px RalewayRegular, sans-serif;
 }
 p {
-  margin-top: 46px;
+  color: #b0b8b8;
+  font: 16px RalewayRegular, sans-serif;
+  line-height: 24px;
+  margin-top: 30px;
   margin-bottom: 53px;
 }
 body {
@@ -142,6 +145,12 @@ header .add {
     background: url("../img/background/bg_1.png") center bottom no-repeat;
   }
 }
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  header .add {
+    height: 530px;
+    background-size: cover;
+  }
+}
 header .add .inside {
   height: 730px;
   margin: 0 auto;
@@ -149,37 +158,53 @@ header .add .inside {
 }
 header .add .inside .jumbotron {
   background: transparent;
-  width: 50%;
+  width: 42%;
   padding: 0;
   margin-top: 174px;
   color: #ffffff;
 }
 @media all and (max-width: 479px) {
   header .add .inside .jumbotron {
-    width: 100%;
+    margin: 130px auto;
+    width: 90%;
     text-align: center;
   }
 }
 @media all and (min-width: 480px) and (max-width: 767px) {
   header .add .inside .jumbotron {
-    width: 100%;
+    margin: 200px auto;
+    width: 90%;
     text-align: center;
   }
 }
 @media all and (min-width: 768px) and (max-width: 952px) {
   header .add .inside .jumbotron {
-    width: 100%;
+    margin: 174px auto;
+    width: 90%;
     text-align: center;
   }
+}
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  header .add .inside .jumbotron {
+    margin-top: 50px;
+    margin-left: 25px;
+  }
+}
+header .add .inside .jumbotron h2 {
+  margin-bottom: 0;
 }
 header .add .inside .jumbotron h3 {
   font-family: RalewayLight, sans-serif;
 }
 header .add .inside .jumbotron p {
+  font-size: 14px;
   color: #9dc8d1;
 }
 header .add .inside .jumbotron .btn {
+  margin-top: 35px;
+  padding-top: 14px;
   width: 240px;
+  height: 60px;
   border-radius: 50px 50px 50px 50px;
   border: 3px solid;
   background: transparent;
@@ -205,8 +230,11 @@ main .features .inside {
 }
 main .features .inside .heading {
   text-align: center;
-  margin-top: 84px;
+  margin-top: 77px;
 }
 main .features .inside .heading h2 {
   color: #636c6c;
+}
+main .features .inside .heading p {
+  margin-top: 26px;
 }
