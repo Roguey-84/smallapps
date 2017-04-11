@@ -238,3 +238,8 @@ main .features .inside .heading h2 {
 main .features .inside .heading p {
   margin-top: 26px;
 }
+main .features .inside .featuresTab > ul > li {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
