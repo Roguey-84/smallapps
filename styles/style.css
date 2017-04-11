@@ -243,3 +243,26 @@ main .features .inside .featuresTab > ul > li {
   display: flex;
   flex-direction: column;
 }
+main .features .inside a {
+  width: 290px;
+  background: #ffffff;
+  color: #9fa9a9;
+  font: 20px RalewayRegular, sans-serif;
+  border-radius: 0;
+  text-align: right;
+  line-height: 48px;
+}
+main .features .inside a i {
+  float: left;
+  font-size: 48px;
+}
+main .features .inside ul {
+  float: left;
+}
+main .features .inside .nav {
+  width: 30%;
+  border-right: 1px solid #9fa9a9;
+}
+main .features .inside .tab-content {
+  width: 70%;
+}
