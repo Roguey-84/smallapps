@@ -244,13 +244,28 @@ main .features .inside .featuresTab > ul > li {
   flex-direction: column;
 }
 main .features .inside a {
-  width: 290px;
+  float: left;
+  width: 325px;
   background: #ffffff;
   color: #9fa9a9;
   font: 20px RalewayRegular, sans-serif;
   border-radius: 0;
   text-align: right;
   line-height: 48px;
+  border-right: 1px solid #9fa9a9;
+  margin-left: 11px;
+  padding-right: 62px;
+  padding-bottom: 10px;
+  padding-top: 55px;
+}
+main .features .inside a:hover,
+main .features .inside a:focus {
+  margin-left: 16px;
+  padding-right: 57px;
+  padding-left: 10px;
+  background: #ffffff;
+  color: #5dca88;
+  border-right: 11px solid #5dca88;
 }
 main .features .inside a i {
   float: left;
@@ -261,8 +276,12 @@ main .features .inside ul {
 }
 main .features .inside .nav {
   width: 30%;
-  border-right: 1px solid #9fa9a9;
 }
 main .features .inside .tab-content {
   width: 70%;
+}
+main .perfectScreens {
+  width: 100%;
+  height: 820px;
+  background: #f2f9f9;
 }

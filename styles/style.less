@@ -171,28 +171,50 @@ main {
         flex-direction: column;
       }
       a {
-        width: 290px;
+        float: left;
+        width: 325px;
         background: #ffffff;
         color: @linkColor;
         font: 20px @mainFont;
         border-radius: 0;
         text-align: right;
         line-height: 48px;
+        border-right: 1px solid @linkColor;
+        margin-left: 11px;
+        padding-right: 62px;
+        padding-bottom: 10px;
+        padding-top: 55px;
+        &:hover, &:focus {
+          margin-left: 16px;
+          padding-right: 57px;
+          padding-left: 10px;
+          background: #ffffff;
+          color: @hoverColor;
+          border-right: 11px solid @hoverColor;
+        }
         i {
           float: left;
           font-size: 48px;
         }
       }
+      //.firstLink {
+      //  padding-top: 63px;
+      //}
       ul {
         float: left;
       }
       .nav {
         width: 30%;
-        border-right: 1px solid @linkColor;
+        //border-right: 1px solid @linkColor;
       }
       .tab-content {
         width: 70%;
       }
     }
+  }
+  .perfectScreens {
+    width: 100%;
+    height: 820px;
+    background: @backgroundStripe;
   }
 }
