@@ -213,7 +213,7 @@ header .add .inside .jumbotron .btn {
   font: 21px RalewayBold, sans-serif;
   color: #ffffff;
   text-transform: uppercase;
-  margin-right: 35px;
+  margin-top: 35px;
 }
 header .add .inside .jumbotron .btn:hover {
   color: #9dc8d1;
