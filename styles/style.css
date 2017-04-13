@@ -204,7 +204,6 @@ header .add .inside .jumbotron p {
   color: #9dc8d1;
 }
 header .add .inside .jumbotron .btn {
-  margin-top: 35px;
   padding-top: 14px;
   width: 240px;
   height: 60px;
@@ -214,6 +213,7 @@ header .add .inside .jumbotron .btn {
   font: 21px RalewayBold, sans-serif;
   color: #ffffff;
   text-transform: uppercase;
+  margin-right: 35px;
 }
 header .add .inside .jumbotron .btn:hover {
   color: #9dc8d1;
@@ -304,18 +304,22 @@ main .perfectScreens {
   height: 820px;
   background: #f2f9f9;
 }
-main .perfectScreens .description {
+main .perfectScreens .description,
+main .perfectScreens .description2 {
   padding-left: 0;
 }
-main .perfectScreens .description h2 {
+main .perfectScreens .description h2,
+main .perfectScreens .description2 h2 {
   margin-top: 155px;
   margin-bottom: 20px;
   color: rgba(93, 202, 136, 0.66);
 }
-main .perfectScreens .description .line {
+main .perfectScreens .description .line,
+main .perfectScreens .description2 .line {
   width: 104px;
 }
-main .perfectScreens .description .line::after {
+main .perfectScreens .description .line::after,
+main .perfectScreens .description2 .line::after {
   display: block;
   position: absolute;
   content: "";
@@ -323,21 +327,24 @@ main .perfectScreens .description .line::after {
   width: 104px;
   background-color: #949c9c;
 }
-main .perfectScreens .description article {
+main .perfectScreens .description article,
+main .perfectScreens .description2 article {
   margin-top: 59px;
 }
-main .perfectScreens .description article h3 {
+main .perfectScreens .description article h3,
+main .perfectScreens .description2 article h3 {
   padding-right: 85px;
   color: #8c9494;
 }
-main .perfectScreens .description article p {
+main .perfectScreens .description article p,
+main .perfectScreens .description2 article p {
   margin-top: 39px;
   margin-bottom: 0;
   padding-right: 125px;
   color: #8c9494;
 }
-main .perfectScreens .description .btn {
-  margin-top: 35px;
+main .perfectScreens .description .btn,
+main .perfectScreens .description2 .btn {
   padding-top: 14px;
   width: 240px;
   height: 60px;
@@ -349,44 +356,165 @@ main .perfectScreens .description .btn {
   text-transform: uppercase;
   margin-top: 52px;
 }
-main .perfectScreens .description .btn:hover {
+main .perfectScreens .description .btn:hover,
+main .perfectScreens .description2 .btn:hover {
   color: #5dca88;
   background: transparent;
   border-color: #5dca88;
 }
+main .perfectScreens .description2 {
+  padding-left: 15px;
+}
 main .perfectScreens img {
   margin-top: 61px;
   margin-left: 60px;
+}
+main .perfectScreens .twoPhones {
+  margin-top: 62px;
+  margin-left: 3px;
 }
 main .gallery {
   width: 100%;
   height: 1140px;
   background: #ffffff;
 }
+main .gallery article {
+  text-align: center;
+  margin-top: 74px;
+}
+main .gallery article h2 {
+  color: #636c6c;
+}
+main .gallery article p {
+  margin-top: 19px;
+}
 main .gallery .carousel {
-  height: 731px;
+  margin-top: 28px;
+  height: 755px;
+}
+main .gallery .carousel .item {
+  height: 755px;
+}
+main .gallery .carousel .item .carousel-caption {
+  right: 38%;
+  left: 38%;
+  padding-bottom: 0;
+}
+main .gallery .carousel .item .carousel-caption p {
+  margin-bottom: 0;
+  text-shadow: none;
+  color: #8c9494;
+  font-size: 14px;
+}
+main .gallery .carousel .carousel-control {
+  color: #9fa9a9;
+  background: none;
+  text-shadow: none;
 }
 main .comments {
   width: 100%;
   height: 560px;
   background: #ffffff;
 }
+main .comments h2 {
+  margin-top: 96px;
+  text-align: center;
+  color: #636c6c;
+}
 main .comments .carousel {
   height: 300px;
+  margin-top: 28px;
+}
+main .comments .carousel .carousel-indicators {
+  bottom: 13px;
+}
+main .comments .carousel .carousel-indicators li {
+  background-color: #8c9494;
+  border-color: #8c9494;
+}
+main .comments .carousel .carousel-indicators li:active,
+main .comments .carousel .carousel-indicators li:hover,
+main .comments .carousel .carousel-indicators li:focus,
+main .comments .carousel .carousel-indicators li.active {
+  background-color: #5dca88;
+  border-color: #5dca88;
+}
+main .comments .carousel .item {
+  height: 300px;
+}
+main .comments .carousel .item .carousel-caption {
+  text-shadow: none;
+  right: 0;
+  left: 0;
+}
+main .comments .carousel .item .carousel-caption .quoteText,
+main .comments .carousel .item .carousel-caption {
+  font: 24px DroidSerifItalic, serif;
+  color: #8c9494;
+  margin-bottom: 22px;
+}
+main .comments .carousel .item .carousel-caption .userName {
+  font: 24px RalewayRegular, sans-serif;
+  color: #5dca88;
+  margin-top: 22px;
+  margin-bottom: 28px;
 }
 main .subscribe {
   width: 100%;
   height: 361px;
   background: #f3f5f5;
+  text-align: center;
+}
+main .subscribe h2 {
+  margin-top: 86px;
+  color: #8c9494;
+}
+main .subscribe .input-group {
+  margin-top: 41px;
+}
+main .subscribe .input-group input {
+  height: 60px;
+  font: 14px RalewayRegular, sans-serif;
+  color: #8c9494;
+  border: 2px solid #bbc3c2;
+  border-radius: 50px 0 0 50px;
+  z-index: 1;
+}
+main .subscribe .input-group input:focus {
+  box-shadow: none;
+}
+main .subscribe .input-group .input-group-btn:last-child > .btn {
+  width: 170px;
+  height: 60px;
+  margin-left: -30px;
+  background-color: #5dca88;
+  border: 2px solid #5dca88;
+  font: 20px ProximaNovaBold, sans-serif;
+  line-height: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 50px 50px 50px 50px;
+  z-index: 99;
+}
+main .subscribe .input-group .input-group-btn:last-child > .btn:focus {
+  outline: none;
 }
 footer {
   width: 100%;
   height: 307px;
   background: #2d312f;
   color: #5d6461;
+  text-align: center;
+}
+footer h6 {
+  font: 24px RalewayRegular, sans-serif;
+  color: #8c9494;
+  line-height: 24px;
+  margin-top: 73px;
 }
 footer ul {
   list-style-type: none;
+  padding-left: 0;
 }
 footer nav > ul > li > a {
   color: #5d6461;
@@ -394,10 +522,31 @@ footer nav > ul > li > a {
 }
 footer nav > ul > li > a:hover,
 footer nav > ul > li > a:focus {
-  color: #808784;
   text-decoration: none;
   outline: none;
 }
 footer .socials a {
   font: 60px Socialico, sans-serif;
+  margin-left: 4px;
+  margin-right: 4px;
+  color: #808784;
+}
+footer .socials a:hover {
+  color: #8c9494;
+}
+footer .links a {
+  font: 14px RalewayRegular, sans-serif;
+  line-height: 24px;
+  color: #8c9494;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+footer .links a:hover {
+  color: #808784;
+}
+footer .socials ul {
+  margin-top: 27px;
+}
+footer .links ul {
+  margin-top: 57px;
 }

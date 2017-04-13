@@ -141,6 +141,7 @@ header {
         }
         .btn {
           .button(@backgroundMain, @addColor);
+          margin-right: 35px;
         }
       }
     }
@@ -200,9 +201,6 @@ main {
           font-size: 48px;
         }
       }
-      //.firstLink {
-      //  padding-top: 63px;
-      //}
       ul {
         float: left;
         margin-top: 30px;
@@ -239,7 +237,7 @@ main {
     width: 100%;
     height: 820px;
     background: @backgroundStripe;
-    .description {
+    .description, .description2 {
       padding-left: 0;
       h2 {
         margin-top: 155px;
@@ -275,31 +273,139 @@ main {
         margin-top: 52px;
       }
     }
+    .description2 {
+      padding-left: 15px;
+    }
     img {
       margin-top: 61px;
       margin-left: 60px;
+    }
+    .twoPhones {
+      margin-top: 62px;
+      margin-left: 3px;
     }
   }
   .gallery {
     width: 100%;
     height: 1140px;
     background: @backgroundMain;
+    article {
+      text-align: center;
+      margin-top: 74px;
+      h2 {
+        color: @headlineColor;
+      }
+      p {
+        margin-top: 19px;
+      }
+    }
     .carousel {
-      height: 731px;
+      margin-top: 28px;
+      height: 755px;
+      .item {
+        height: 755px;
+        .carousel-caption {
+          right: 38%;
+          left: 38%;
+          padding-bottom: 0;
+          p {
+            margin-bottom: 0;
+            text-shadow: none;
+            color: @mainTextColorDark;
+            font-size: 14px;
+          }
+        }
+      }
+      .carousel-control {
+        color: @linkColor;
+        background: none;
+        text-shadow: none;
+      }
     }
   }
   .comments {
     width: 100%;
     height: 560px;
     background: @backgroundMain;
+    h2 {
+      margin-top: 96px;
+      text-align: center;
+      color: @headlineColor;
+    }
     .carousel {
       height: 300px;
+      margin-top: 28px;
+      .carousel-indicators {
+        bottom: 13px;
+        li {
+          background-color: @mainTextColorDark;
+          border-color: @mainTextColorDark;
+          &:active, &:hover, &:focus, &.active {
+            background-color: @hoverColor;
+            border-color: @hoverColor;
+          }
+        }
+      }
+      .item {
+        height: 300px;
+        .carousel-caption {
+          text-shadow: none;
+          right: 0;
+          left: 0;
+          .quoteText, & {
+            font: 24px DroidSerifItalic, serif;
+            color: @mainTextColorDark;
+            margin-bottom: 22px;
+          }
+          .userName {
+            font: 24px @mainFont;
+            color: @hoverColor;
+            margin-top: 22px;
+            margin-bottom: 28px;
+          }
+        }
+      }
     }
   }
   .subscribe {
     width: 100%;
     height: 361px;
     background: #f3f5f5;
+    text-align: center;
+    h2 {
+      margin-top: 86px;
+      color: @mainTextColorDark;
+    }
+    .input-group {
+      margin-top: 41px;
+      input {
+        height: 60px;
+        font: 14px @mainFont;
+        color: @mainTextColorDark;
+        border: 2px solid #bbc3c2;
+        border-radius: 50px 0 0 50px;
+        z-index: 1;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      .input-group-btn:last-child>.btn {
+        width: 170px;
+        height: 60px;
+        margin-left: -30px;
+        background-color: @hoverColor;
+        border: 2px solid @hoverColor;
+        font: 20px ProximaNovaBold, sans-serif;
+        line-height: 24px;
+        color: @backgroundMain;
+        text-transform: uppercase;
+        border-radius: 50px 50px 50px 50px;
+        z-index: 99;
+        &:focus {
+          outline: none;
+        }
+      }
+    }
   }
 }
 footer {
@@ -307,19 +413,48 @@ footer {
   height: 307px;
   background: #2d312f;
   color: #5d6461;
+  text-align: center;
+  h6 {
+    font: 24px @mainFont;
+    color: @mainTextColorDark;
+    line-height: 24px;
+    margin-top: 73px;
+  }
   ul {
     list-style-type: none;
+    padding-left: 0;
   }
   nav>ul>li>a {
     color: #5d6461;
     text-decoration: none;
     &:hover, &:focus {
-      color: #808784;
       text-decoration: none;
       outline: none;
     }
   }
   .socials a {
     font: 60px Socialico, sans-serif;
+    margin-left: 4px;
+    margin-right: 4px;
+    color: #808784;
+    &:hover {
+      color: @mainTextColorDark;
+    }
+  }
+  .links a {
+    font: 14px @mainFont;
+    line-height: 24px;
+    color: @mainTextColorDark;
+    margin-left: 8px;
+    margin-right: 8px;
+    &:hover {
+      color: #808784;
+    }
+  }
+  .socials ul {
+    margin-top: 27px;
+  }
+  .links ul {
+    margin-top: 57px;
   }
 }
