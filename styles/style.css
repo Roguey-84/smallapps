@@ -51,6 +51,9 @@ body {
   float: left;
   width: 100%;
 }
+.clearBlock {
+  clear: both;
+}
 .container-fluid {
   margin: 0;
   padding: 0;
@@ -209,6 +212,7 @@ header .add .inside .jumbotron .btn {
   border: 3px solid;
   background: transparent;
   font: 21px RalewayBold, sans-serif;
+  color: #ffffff;
   text-transform: uppercase;
 }
 header .add .inside .jumbotron .btn:hover {
@@ -238,11 +242,6 @@ main .features .inside .heading h2 {
 main .features .inside .heading p {
   margin-top: 26px;
 }
-main .features .inside .featuresTab > ul > li {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-}
 main .features .inside a {
   float: left;
   width: 325px;
@@ -255,8 +254,8 @@ main .features .inside a {
   border-right: 1px solid #9fa9a9;
   margin-left: 11px;
   padding-right: 62px;
-  padding-bottom: 10px;
-  padding-top: 55px;
+  padding-bottom: 33px;
+  padding-top: 33px;
 }
 main .features .inside a:hover,
 main .features .inside a:focus {
@@ -273,15 +272,132 @@ main .features .inside a i {
 }
 main .features .inside ul {
   float: left;
+  margin-top: 30px;
 }
-main .features .inside .nav {
+main .features .inside .nav-stacked {
   width: 30%;
 }
+main .features .inside .nav-stacked > li + li {
+  margin-top: 0;
+}
 main .features .inside .tab-content {
-  width: 70%;
+  width: 100%;
+  padding-left: 480px;
+}
+main .features .inside .tab-content i {
+  font-size: 220px;
+  color: #5dca88;
+  margin-left: 205px;
+  margin-top: 93px;
+}
+main .features .inside .tab-content h4 {
+  font: 24px RalewayBold, sans-serif;
+  color: #636c6c;
+  margin-top: 53px;
+}
+main .features .inside .tab-content p {
+  margin-top: 27px;
+  margin-left: 2px;
 }
 main .perfectScreens {
   width: 100%;
   height: 820px;
   background: #f2f9f9;
+}
+main .perfectScreens .description {
+  padding-left: 0;
+}
+main .perfectScreens .description h2 {
+  margin-top: 155px;
+  margin-bottom: 20px;
+  color: rgba(93, 202, 136, 0.66);
+}
+main .perfectScreens .description .line {
+  width: 104px;
+}
+main .perfectScreens .description .line::after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 104px;
+  background-color: #949c9c;
+}
+main .perfectScreens .description article {
+  margin-top: 59px;
+}
+main .perfectScreens .description article h3 {
+  padding-right: 85px;
+  color: #8c9494;
+}
+main .perfectScreens .description article p {
+  margin-top: 39px;
+  margin-bottom: 0;
+  padding-right: 125px;
+  color: #8c9494;
+}
+main .perfectScreens .description .btn {
+  margin-top: 35px;
+  padding-top: 14px;
+  width: 240px;
+  height: 60px;
+  border-radius: 50px 50px 50px 50px;
+  border: 3px solid;
+  background: transparent;
+  font: 21px RalewayBold, sans-serif;
+  color: #636c6c;
+  text-transform: uppercase;
+  margin-top: 52px;
+}
+main .perfectScreens .description .btn:hover {
+  color: #5dca88;
+  background: transparent;
+  border-color: #5dca88;
+}
+main .perfectScreens img {
+  margin-top: 61px;
+  margin-left: 60px;
+}
+main .gallery {
+  width: 100%;
+  height: 1140px;
+  background: #ffffff;
+}
+main .gallery .carousel {
+  height: 731px;
+}
+main .comments {
+  width: 100%;
+  height: 560px;
+  background: #ffffff;
+}
+main .comments .carousel {
+  height: 300px;
+}
+main .subscribe {
+  width: 100%;
+  height: 361px;
+  background: #f3f5f5;
+}
+footer {
+  width: 100%;
+  height: 307px;
+  background: #2d312f;
+  color: #5d6461;
+}
+footer ul {
+  list-style-type: none;
+}
+footer nav > ul > li > a {
+  color: #5d6461;
+  text-decoration: none;
+}
+footer nav > ul > li > a:hover,
+footer nav > ul > li > a:focus {
+  color: #808784;
+  text-decoration: none;
+  outline: none;
+}
+footer .socials a {
+  font: 60px Socialico, sans-serif;
 }

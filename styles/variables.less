@@ -41,7 +41,7 @@
 @headlineColor: #636c6c;
 @headlineColorSecond: rgba(93,202,136,0.66);
 @iconColor: rgb(61,62,66);
-@hoverColor: rgb(93,202,136);
+@hoverColor: rgb(93, 202, 136);
 @backgroundMain: #ffffff;
 @backgroundStripe: #f2f9f9;
 @addColor: #9dc8d1;
@@ -63,7 +63,7 @@ p {
   margin-bottom: 53px;
 }
 
-.button(@mainColor, @hoverColor) {
+.button(@backgroundMain, @hoverColor) {
   margin-top: 35px;
   padding-top: 14px;
   width: 240px;
@@ -72,6 +72,7 @@ p {
   border: 3px solid;
   background: transparent;
   font: 21px @headlineFont;
+  color: @backgroundMain;
   text-transform: uppercase;
 
   &:hover {

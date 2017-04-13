@@ -7,6 +7,9 @@ body {
   float: left;
   width: 100%;
 }
+.clearBlock {
+  clear: both;
+}
 .container-fluid {
   margin: 0;
   padding: 0;
@@ -24,7 +27,7 @@ header {
     //max-width: 1176px;
     //margin: 0 auto;
     nav {
-      background: #ffffff;
+      background: @backgroundMain;
       border: none;
       width: 100%;
       height: 109px;
@@ -35,7 +38,7 @@ header {
       font: 18px @mainFont;
       .container-fluid {
         padding: 0;
-        background: #ffffff;
+        background: @backgroundMain;
         .navbar-nav>li>a {
           z-index: 100;
         }
@@ -150,7 +153,7 @@ main {
   .features {
     width: 100%;
     height: 983px;
-    background: #ffffff;
+    background: @backgroundMain;
     .inside {
       //max-width: 1176px;
       height: 983px;
@@ -165,15 +168,15 @@ main {
           margin-top: 26px;
         }
       }
-      .featuresTab>ul>li {
-        margin-top: 100px;
-        display: flex;
-        flex-direction: column;
-      }
+      //.featuresTab>ul>li {
+      //  margin-top: 100px;
+      //  display: flex;
+      //  flex-direction: column;
+      //}
       a {
         float: left;
         width: 325px;
-        background: #ffffff;
+        background: @backgroundMain;
         color: @linkColor;
         font: 20px @mainFont;
         border-radius: 0;
@@ -182,13 +185,13 @@ main {
         border-right: 1px solid @linkColor;
         margin-left: 11px;
         padding-right: 62px;
-        padding-bottom: 10px;
-        padding-top: 55px;
+        padding-bottom: 33px;
+        padding-top: 33px;
         &:hover, &:focus {
           margin-left: 16px;
           padding-right: 57px;
           padding-left: 10px;
-          background: #ffffff;
+          background: @backgroundMain;
           color: @hoverColor;
           border-right: 11px solid @hoverColor;
         }
@@ -202,13 +205,33 @@ main {
       //}
       ul {
         float: left;
+        margin-top: 30px;
       }
-      .nav {
+      .nav-stacked {
         width: 30%;
+        &>li+li {
+          margin-top: 0;
+        }
         //border-right: 1px solid @linkColor;
       }
       .tab-content {
-        width: 70%;
+        width: 100%;
+        padding-left: 480px;
+        i {
+          font-size: 220px;
+          color: @hoverColor;
+          margin-left: 205px;
+          margin-top: 93px;
+        }
+        h4 {
+          font: 24px @headlineFont;
+          color: @headlineColor;
+          margin-top: 53px;
+        }
+        p {
+          margin-top: 27px;
+          margin-left: 2px;
+        }
       }
     }
   }
@@ -216,5 +239,87 @@ main {
     width: 100%;
     height: 820px;
     background: @backgroundStripe;
+    .description {
+      padding-left: 0;
+      h2 {
+        margin-top: 155px;
+        margin-bottom: 20px;
+        color: @headlineColorSecond;
+      }
+      .line {
+        width: 104px;
+        &::after {
+          display: block;
+          position: absolute;
+          content: "";
+          height: 2px;
+          width: 104px;
+          background-color: #949c9c;
+        }
+      }
+      article {
+        margin-top: 59px;
+        h3 {
+          padding-right: 85px;
+          color: @mainTextColorDark;
+        }
+        p {
+          margin-top: 39px;
+          margin-bottom: 0;
+          padding-right: 125px;
+          color: @mainTextColorDark;
+        }
+      }
+      .btn {
+        .button (@headlineColor, @hoverColor);
+        margin-top: 52px;
+      }
+    }
+    img {
+      margin-top: 61px;
+      margin-left: 60px;
+    }
+  }
+  .gallery {
+    width: 100%;
+    height: 1140px;
+    background: @backgroundMain;
+    .carousel {
+      height: 731px;
+    }
+  }
+  .comments {
+    width: 100%;
+    height: 560px;
+    background: @backgroundMain;
+    .carousel {
+      height: 300px;
+    }
+  }
+  .subscribe {
+    width: 100%;
+    height: 361px;
+    background: #f3f5f5;
+  }
+}
+footer {
+  width: 100%;
+  height: 307px;
+  background: #2d312f;
+  color: #5d6461;
+  ul {
+    list-style-type: none;
+  }
+  nav>ul>li>a {
+    color: #5d6461;
+    text-decoration: none;
+    &:hover, &:focus {
+      color: #808784;
+      text-decoration: none;
+      outline: none;
+    }
+  }
+  .socials a {
+    font: 60px Socialico, sans-serif;
   }
 }
