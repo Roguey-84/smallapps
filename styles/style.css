@@ -70,6 +70,16 @@ header {
   width: 100%;
   height: 839px;
 }
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  header {
+    height: 639px;
+  }
+}
+@media all and (min-width: 768px) and (max-width: 952px) {
+  header {
+    height: 539px;
+  }
+}
 header .inside nav {
   background: #ffffff;
   border: none;
@@ -91,6 +101,20 @@ header .inside nav .container-fluid .navbar-nav > li > a {
 @media all and (min-width: 768px) and (max-width: 952px) {
   header .inside nav {
     height: 150px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  header .inside nav {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media all and (min-width: 1200px) and (max-width: 1440px) {
+  header .inside nav {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 header .inside nav a.navbar-brand {
@@ -145,7 +169,8 @@ header .add {
 }
 @media all and (min-width: 768px) and (max-width: 952px) {
   header .add {
-    background: url("../img/background/bg_1.png") center bottom no-repeat;
+    height: 430px;
+    background-size: cover;
   }
 }
 @media all and (min-width: 953px) and (max-width: 1199px) {
@@ -189,15 +214,30 @@ header .add .inside .jumbotron {
 }
 @media all and (min-width: 953px) and (max-width: 1199px) {
   header .add .inside .jumbotron {
-    margin-top: 50px;
+    margin-top: 100px;
     margin-left: 25px;
+  }
+}
+@media all and (min-width: 1200px) and (max-width: 1440px) {
+  header .add .inside .jumbotron {
+    padding-left: 25px;
   }
 }
 header .add .inside .jumbotron h2 {
   margin-bottom: 0;
 }
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  header .add .inside .jumbotron h2 {
+    font-size: 32px;
+  }
+}
 header .add .inside .jumbotron h3 {
   font-family: RalewayLight, sans-serif;
+}
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  header .add .inside .jumbotron h3 {
+    font-size: 32px;
+  }
 }
 header .add .inside .jumbotron p {
   font-size: 14px;
@@ -236,11 +276,24 @@ main .features .inside .heading {
   text-align: center;
   margin-top: 77px;
 }
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  main .features .inside .heading {
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 95px;
+  }
+}
 main .features .inside .heading h2 {
   color: #636c6c;
 }
 main .features .inside .heading p {
   margin-top: 26px;
+}
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  main .features .inside .featuresTab {
+    padding-left: 55px;
+    padding-right: 55px;
+  }
 }
 main .features .inside a {
   float: left;
@@ -284,20 +337,55 @@ main .features .inside .tab-content {
   width: 100%;
   padding-left: 480px;
 }
-main .features .inside .tab-content i {
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  main .features .inside .tab-content {
+    padding-left: 370px;
+  }
+}
+@media all and (min-width: 1200px) and (max-width: 1440px) {
+  main .features .inside .tab-content {
+    padding-left: 360px;
+  }
+}
+@media all and (min-width: 1200px) and (max-width: 1440px) {
+  main .features .inside .tab-content .tab-pane {
+    text-align: center;
+  }
+}
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  main .features .inside .tab-content .tab-pane {
+    text-align: center;
+  }
+}
+main .features .inside .tab-content .tab-pane i {
   font-size: 220px;
   color: #5dca88;
   margin-left: 205px;
   margin-top: 93px;
 }
-main .features .inside .tab-content h4 {
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  main .features .inside .tab-content .tab-pane i {
+    margin-left: 0;
+  }
+}
+@media all and (min-width: 1200px) and (max-width: 1440px) {
+  main .features .inside .tab-content .tab-pane i {
+    margin-left: 0;
+  }
+}
+main .features .inside .tab-content .tab-pane article h4 {
   font: 24px RalewayBold, sans-serif;
   color: #636c6c;
   margin-top: 53px;
 }
-main .features .inside .tab-content p {
+main .features .inside .tab-content .tab-pane article p {
   margin-top: 27px;
   margin-left: 2px;
+}
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  main .features .inside .tab-content .tab-pane article {
+    text-align: center;
+  }
 }
 main .perfectScreens {
   width: 100%;
@@ -362,16 +450,93 @@ main .perfectScreens .description2 .btn:hover {
   background: transparent;
   border-color: #5dca88;
 }
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  main .perfectScreens .description {
+    padding-left: 35px;
+    padding-right: 0;
+  }
+}
+@media all and (min-width: 1200px) and (max-width: 1440px) {
+  main .perfectScreens .description {
+    padding-left: 90px;
+    padding-right: 0;
+  }
+}
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  main .perfectScreens .description h2 {
+    font-size: 32px;
+    margin-top: 165px;
+  }
+}
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  main .perfectScreens .description article h3 {
+    font-size: 32px;
+    padding-right: 50px;
+  }
+}
+@media all and (min-width: 1200px) and (max-width: 1440px) {
+  main .perfectScreens .description article h3 {
+    padding-right: 30px;
+  }
+}
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  main .perfectScreens .description article p {
+    padding-right: 0;
+  }
+}
+@media all and (min-width: 1200px) and (max-width: 1440px) {
+  main .perfectScreens .description article p {
+    padding-right: 50px;
+  }
+}
 main .perfectScreens .description2 {
   padding-left: 15px;
+}
+@media all and (min-width: 1200px) and (max-width: 1440px) {
+  main .perfectScreens .description2 {
+    padding-left: 25px;
+  }
+}
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  main .perfectScreens .description2 h2 {
+    font-size: 32px;
+    margin-top: 165px;
+  }
+}
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  main .perfectScreens .description2 article h3 {
+    font-size: 32px;
+    padding-right: 60px;
+  }
+}
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  main .perfectScreens .description2 article p {
+    padding-right: 20px;
+  }
 }
 main .perfectScreens img {
   margin-top: 61px;
   margin-left: 60px;
 }
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  main .perfectScreens img {
+    margin-left: 40px;
+  }
+}
 main .perfectScreens .twoPhones {
   margin-top: 62px;
   margin-left: 3px;
+}
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  main .perfectScreens .twoPhones {
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+@media all and (min-width: 1200px) and (max-width: 1440px) {
+  main .perfectScreens .twoPhones {
+    margin-left: 25px;
+  }
 }
 main .gallery {
   width: 100%;
@@ -381,6 +546,13 @@ main .gallery {
 main .gallery article {
   text-align: center;
   margin-top: 74px;
+}
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  main .gallery article {
+    padding-left: 55px;
+    padding-right: 55px;
+    margin-top: 90px;
+  }
 }
 main .gallery article h2 {
   color: #636c6c;
@@ -399,6 +571,12 @@ main .gallery .carousel .item .carousel-caption {
   right: 38%;
   left: 38%;
   padding-bottom: 0;
+}
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  main .gallery .carousel .item .carousel-caption {
+    right: 35%;
+    left: 35%;
+  }
 }
 main .gallery .carousel .item .carousel-caption p {
   margin-bottom: 0;
@@ -498,6 +676,12 @@ main .subscribe .input-group .input-group-btn:last-child > .btn {
 }
 main .subscribe .input-group .input-group-btn:last-child > .btn:focus {
   outline: none;
+}
+@media all and (min-width: 953px) and (max-width: 1199px) {
+  main .subscribe .input-group {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 footer {
   width: 100%;
